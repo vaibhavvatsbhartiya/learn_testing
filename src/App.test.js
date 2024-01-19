@@ -7,7 +7,7 @@ test('check hello on screen', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-test("check input box", () =>{
+test("check input box", () =>{ 
   render(<App/>);
   const inputBox = screen.getByRole('textbox');
   const inputBoxPlaceholder = screen.getByPlaceholderText(/Enter User name/i);
